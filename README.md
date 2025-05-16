@@ -22,7 +22,7 @@ A complete microservices-based system demonstrating core concepts including:
 - Maven
 
 ---
-
+```
 ## 🏗️ Microservices Architecture
                       +------------------+
                       |  Config Server   |
@@ -43,7 +43,7 @@ A complete microservices-based system demonstrating core concepts including:
          +-----------------------------------------------+
 
 ---
-
+```
 ## 🧪 Modules
 
 | Service Name       | Description                          | Port  |
