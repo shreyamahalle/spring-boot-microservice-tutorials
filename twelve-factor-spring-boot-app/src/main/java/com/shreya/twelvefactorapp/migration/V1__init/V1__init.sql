@@ -1,0 +1,5 @@
+-- SQL file
+CREATE TABLE demo (
+id INT PRIMARY KEY,
+name VARCHAR(50)
+);
