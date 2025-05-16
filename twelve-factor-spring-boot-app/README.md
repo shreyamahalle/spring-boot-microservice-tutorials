@@ -1,3 +1,28 @@
+# Twelve Factor Spring Boot Application
+
+This is a sample Spring Boot application demonstrating the [12-Factor App](https://12factor.net/) principles for building scalable and maintainable cloud-native applications.
+
+---
+
+## Features
+
+- Single codebase managed with Git
+- Dependency management with Maven (`pom.xml`)
+- Configuration via environment variables or `application.properties`
+- External backing services (database) accessed via URL configuration
+- Build, release, and run lifecycle with Maven and Docker
+- Stateless processes with no local file storage
+- Port binding via configurable environment variable
+- Supports scaling through container replicas (Docker/Kubernetes)
+- Fast startup and graceful shutdown
+- Consistent dev and production parity via environment variables
+- Logging to stdout using SLF4J, suitable for container logging
+- Database migrations managed automatically by Flyway
+
+---
+
+
+
             ┌────────────────────────────────────────────┐
             │              Source Code                   │
             │   (1 Codebase: Git Repo for Spring Boot)   │
