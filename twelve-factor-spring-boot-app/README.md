@@ -77,7 +77,8 @@ This is a sample Spring Boot application demonstrating the [12-Factor App](https
             │ (12) Admin Tasks: DB migration with Flyway  │
             └────────────────────────────────────────────┘
 
-Project Structure:
+# Project Structure:
+```
  com.example.twelvefactorapp
  ├── controller
  │   ├── HelloController.java
@@ -92,7 +93,7 @@ Project Structure:
  │   └── Demo.java
  └── migration
      └── V1__init.sql
-
+```
 // ==========================================================================================
 // ✅ 1. CODEBASE (One Codebase)
 // Spring Boot app with Git-based version control (one repo for one app)
