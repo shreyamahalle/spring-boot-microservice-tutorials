@@ -66,7 +66,15 @@ cd microservices-tutorials
 
 ## Service Registry (Eureka Server)
 ```
+# Start Eureka Server
 ```
 - Port: `8761`
 - URL: [http://localhost:8761](http://localhost:8761)
 ```
+## 📚 References
+
+- [Spring Cloud](https://spring.io/projects/spring-cloud)  
+- [Resilience4J](https://resilience4j.readme.io/)  
+- [Eureka Service Discovery](https://cloud.spring.io/spring-cloud-netflix/multi/multi__service_discovery_eureka_clients.html)  
+- [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)  
+
