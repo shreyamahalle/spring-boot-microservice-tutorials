@@ -1,9 +1,13 @@
 spring:
   application:
-    name: shreya-client-service
+    name: eureka-client
 
 server:
   port: 8081
+
+  cloud:
+    compatibility-verifier:
+      enabled: false
 
 eureka:
   client:
