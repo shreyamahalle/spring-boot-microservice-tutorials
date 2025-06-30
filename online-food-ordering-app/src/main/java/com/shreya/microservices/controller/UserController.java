@@ -1,15 +1,26 @@
 package com.shreya.microservices.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.shreya.microservices.model.User;
+import com.shreya.microservices.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping
+@RequestMapping("/users")
 public class UserController {
+    @Autowired
+    private UserService userService;
 
-    @GetMapping("/getUser")
-    public String getUser(){
-        return "User: Shreya";
+    @PostMapping("/register")
+    public ResponseEntity<User> register(@RequestBody User u) {
+        return ResponseEntity.ok(userService.register(u));
+    }
+
+    @GetMapping("/{username}")
+    public ResponseEntity<User> getByUsername(@PathVariable String username) {
+        return userService.findByUsername(username)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 }
